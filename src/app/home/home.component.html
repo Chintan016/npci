@@ -1,0 +1,142 @@
+<!-- header component -->
+<app-home-header></app-home-header>
+
+
+<!-- main div -->
+<div class="bg-mainBackground">
+    <div class="bg-hero relative">
+        <p-carousel [value]="products" [numVisible]="1" [numScroll]="3" [circular]="false" [showNavigators]="false"
+            styleClass="home-carousel container mx-auto" [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item">
+
+                <!-- hero section -->
+                <div class=" flex justify-between relative">
+                    <div class="py-5 container mx-auto mb-16">
+                        <div class="md:flex md:flex-row p-5 ">
+                            <!-- left side -->
+                            <div class="md:w-3/5">
+                                <h1 class="font-extrabold text-6xl pb-2 pt-5 text-gradient ">
+                                    Payment.
+                                </h1>
+                                <h1 class="font-black text-7xl pb-5 pt-2 text-effect">
+                                    More efficiently
+                                </h1>
+                                <div class="uppercase text-heading font-medium text-2xl">
+                                    We Have <span class="uppercase text-cardText font-bold">Complete Solution</span> For
+                                    All
+                                    Your
+                                    <br> Integration Needs
+                                </div>
+                                <p class="text-subHeading pt-3 text-lg font-medium">Browse vetted investment offerings
+                                    in
+                                    communities
+                                    all
+                                    over
+                                    the US.</p>
+                                <button
+                                    class="mt-10 text-center text-white font-medium rounded py-2 w-40 focus:outline-none bg-blue400 text-lg">Explore
+                                    API</button>
+                            </div>
+                            <!-- right side -->
+                            <div class="md:w-2/5">
+                                <img class="w-full" src="./../../assets/images/home/homeImage.svg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- svg design -->
+                    </div>
+                </div>
+
+            </ng-template>
+        </p-carousel>
+        <svg width="1365" class="w-full absolute bottom-0" height="79" viewBox="0 0 1365 79" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1097 0.5L-0.5 105.5H1364.5L1097 0.5Z" fill="white" />
+        </svg>
+
+    </div>
+
+    <!-- platforms -->
+    <div class="bg-lightWhite relative">
+        <div class="text-center py-4 text-xl font-medium container mx-auto">
+            <h1 class="mt-5 text-xl font-medium text-cardText">Trusted by leading vertical SaaS and e-commerce platforms
+            </h1>
+            <div class="flex justify-between gap-16 my-8">
+                <div class="w-full text-left">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-3xl">200+</p>
+                        <img src="../../assets/images/home/upi.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base text-gray-500">Successfull Precerts</p>
+                        <p class="font-normal text-xs">Unifield Payment Services</p>
+                    </div>
+                </div>
+                <div class="w-full text-left">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-3xl">15K+</p>
+                        <img src="../../assets/images/home/aeps.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base text-gray-500">Live Entities</p>
+                        <p class="font-normal text-xs">Adhar enbled payment Sysytem </p>
+                    </div>
+                </div>
+                <div class="w-full text-left">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-3xl">1,202</p>
+                        <img src="../../assets/images/home/nfs.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base text-gray-500">NFS Member Banks</p>
+                        <p class="font-normal text-xs">National Financial Switch </p>
+                    </div>
+                </div>
+                <div class="w-full text-left">
+                    <div class="flex justify-between">
+                        <p class="font-bold text-3xl">68</p>
+                        <img src="../../assets/images/home/bharatBill.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="font-semibold text-base text-gray-500">BHARAT BILLPAY BBPOUs</p>
+                        <p class="font-normal text-xs">National Financial Switch </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel view -->
+    <div class="bg-blue400 text-lightWhite">
+        <div class="container mx-auto text-center">
+            <h1 class="font-medium text-2xl py-9">We have plenty of use cases to offer Subscribe to any kind of
+                financial
+                APIs</h1>
+            <!-- tab view -->
+            <p-tabView class="flex justify-center">
+                <p-tabPanel header="Banking" leftIcon="pi-bell-">
+
+                    <!-- carousel component -->
+                    <app-carousel></app-carousel>
+                </p-tabPanel>
+                <p-tabPanel header="Aggregators">
+
+                    <!-- carousel component -->
+                    <app-carousel></app-carousel>
+                </p-tabPanel>
+                <p-tabPanel header="Payment">
+
+                    <!-- carousel component -->
+                    <app-carousel></app-carousel>
+                </p-tabPanel>
+                <p-tabPanel header="Digital KYC">
+
+                    <!-- carousel component -->
+                    <app-carousel></app-carousel>
+                </p-tabPanel>
+            </p-tabView>
+
+        </div>
+    </div>
+
+</div>

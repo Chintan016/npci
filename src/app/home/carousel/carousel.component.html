@@ -1,0 +1,31 @@
+<!-- carousel component -->
+<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false"
+    [responsiveOptions]="responsiveOptions">
+
+    <!-- card view -->
+    <ng-template let-product pTemplate="item">
+        <div class="w-10/12 card p-5 rounded-xl">
+            <div class="header-card mb-5">
+                <!-- card title & image -->
+                <div class="flex justify-between w-full pb-4">
+                    <p class="font-bold text-2xl text-lightWhite">{{product.title}}</p>
+                    <img class=" object-cover h-12" src="{{product?.img}}" alt="">
+                </div>
+                <!-- for keys -->
+                <div class="flex">
+                    <p class="max-w-max mr-4  px-4 py-1 text-xs font-medium text-cardText card">{{product?.key1}}</p>
+                    <p class="max-w-max card rounded-full px-4 py-1 text-xs font-medium text-cardText">
+                        {{product?.key2}}</p>
+                </div>
+
+                <!-- description -->
+                <hr class="w-full mt-4">
+                <h2 class="font-medium text-xs text-lightWhite py-2">{{product?.des}}</h2>
+            </div>
+
+            <!-- view more -->
+            <img src="../../assets/images/home/card/close.svg" class="absolute right-5 bottom-3" alt="">
+        </div>
+
+    </ng-template>
+</p-carousel>

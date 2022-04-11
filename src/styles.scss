@@ -1,0 +1,155 @@
+/* You can add global styles to this file, and also import other style files */
+
+// tailwid css imported...
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    html {
+        font-family: Montserrat, system-ui, sans-serif;
+    }
+}
+@layer utilities {
+    .text-gradient {
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .text-effect {
+        color: #fef4fe;
+        background: linear-gradient(90deg, #ff6868, #8775f9, #ff9029, #fb9fe7);
+        letter-spacing: 0.08em;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+    }
+}
+
+// primeng css start
+ul.p-tabview-nav {
+    background-color: transparent !important;
+    width: fit-content;
+    margin: 0px auto;
+    li {
+        width: 170px;
+    }
+}
+
+.p-tabview-nav-link {
+    background-color: transparent !important;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    color: #75adf5 !important;
+    border-color: #75adf5 !important;
+    display: flex;
+    justify-content: center;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:focus {
+    box-shadow: none !important;
+}
+
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: #ffffff !important;
+    display: flex;
+    justify-content: center;
+    border-color: #ffffff !important;
+}
+
+.p-tabview.p-component {
+    width: 100%;
+}
+.p-tabview .p-tabview-panels {
+    padding-top: 57px !important;
+    background-color: transparent !important;
+}
+
+.p-carousel-prev-icon::before {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 7px;
+    color: #ffffff;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    background-color: transparent !important;
+    opacity: 0.5;
+    border: 0.09px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0.3px 0.36px 1.2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(3.24px);
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background: linear-gradient(
+        100.15deg,
+        #ffffff -87.61%,
+        rgba(255, 255, 255, 0.989737) -87.59%,
+        rgba(255, 255, 255, 0.44) 82.35%
+    ) !important;
+}
+
+// primeng css end
+
+// gradient css start
+.text-gradient {
+    background: linear-gradient(90deg, #6025f5 0%, #ff5555 42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-hero {
+    background: linear-gradient(
+        136.97deg,
+        rgba(241, 157, 255, 0.2) 0%,
+        rgba(247, 187, 241, 0.15) 24.31%,
+        rgba(230, 217, 253, 0.14) 46.53%,
+        #ffffff 86.42%
+    );
+}
+.card {
+    background: linear-gradient(111.56deg, rgba(255, 255, 255, 0.5) -2.6%, rgba(255, 255, 255, 0.17) 89.17%);
+    border: 0.8px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    position: relative;
+    width: 95%;
+}
+
+// gradient css end
+
+// Home carousel start here
+.home-carousel {
+    .p-carousel-indicators .p-carousel-indicator button {
+        background-color: transparent !important;
+        opacity: 1 !important;
+        border: 1px solid #bfd0e7;
+        box-shadow: 0.3px 0.36px 1.2px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(3.24px);
+        border-radius: 0% !important;
+        width: 90px !important;
+        height: 2px !important;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+        border: 1px;
+        background: #180048 !important;
+    }
+
+    ul.p-carousel-indicators.p-reset {
+        position: absolute;
+        bottom: 67px;
+    }
+}
+
+// Home carousel end here
+
